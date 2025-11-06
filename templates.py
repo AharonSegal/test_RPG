@@ -13,7 +13,8 @@
 
     git add <file>          # Stage file
     git add .               # Stage all
-git commit -m               # Commit
+git commit -m "INITIAL PUSH"               # Commit
+git commit -m                # Commit
 
 
 git push -u origin main     # First push
@@ -28,6 +29,9 @@ git push                    # Next pushes
     git pull               # Fetch + merge from remote
     git fetch              # Fetch only (no merge)
 
+    
+    To see the remote Git URL of the current repository, use:
+    git remote -v
 
 """
 
@@ -38,12 +42,15 @@ git push                    # Next pushes
 # +=================+
 
 class MyClass:
-    def __init__(self, attr1, attr2, attr3, attr4, attr5):
+    def __init__(self, attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8):
         self.attr1 = attr1
         self.attr2 = attr2
         self.attr3 = attr3
         self.attr4 = attr4
         self.attr5 = attr5
+        self.attr6 = attr6
+        self.attr7 = attr7
+        self.attr8 = attr8
 
 
 
