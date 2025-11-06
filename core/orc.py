@@ -1,19 +1,23 @@
 import random
-from weapons import random_weapon
+from core.assets import orc_names
+from core.monsters import Monster
 
-class Orc:
-    def __init__(self, name, speed, power ,armor_rating, weapon):
-        self.name = name
-        self.hp = 50
+class Orc(Monster):
+    def __init__(self,hp ,weapon_name,weapon_power,):
+        super().__init__(hp, weapon_name,weapon_power)
+        self.hp += 30
+        self.name = orc_names.pop(random.choice(orc_names))
         self.type = "orc"
         self.power = random.randint(10,15)
-        self.weapon = random_weapon() # tup (name: str, power: int)
         self.speed = random.randint(0,5)
         self.armor_rating = random.randint(2,8)
 
-    def speak():
-        pass
+    def speak(self):
+        print(f"{self.name} type: {self.type}: BRWAAAAAAAAA!!!")
 
-    def attack():
-        pass
+
+    def attack(self):
+        attack = random.randint(20) + self.speed
+        return attack
+
 
