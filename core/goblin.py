@@ -4,9 +4,9 @@ from core.monsters import Monster
 
 
 class Goblin(Monster):
-    def __init__(self,hp, weapon_name,weapon_power,armor_rating):
-        super().__init__(hp, weapon_name,weapon_power,armor_rating)
-        self.name = goblin_names.pop(random.choice(goblin_names))
+    def __init__(self):
+        super().__init__()
+        self.name = (random.choice(goblin_names))
         self.type = "goblin"
         self.power = random.randint(5,10)
         self.speed = random.randint(5,10)
