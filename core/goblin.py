@@ -27,6 +27,4 @@ class Goblin(Monster):
     #             return True        
     #     return False
 
-x = Goblin()
 
-print(x.weapon_name)

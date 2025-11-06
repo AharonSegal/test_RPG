@@ -3,10 +3,10 @@ from core.assets import orc_names
 from core.monsters import Monster
 
 class Orc(Monster):
-    def __init__(self,hp ,weapon_name,weapon_power,):
-        super().__init__(hp, weapon_name,weapon_power)
+    def __init__(self):
+        super().__init__()
         self.hp += 30
-        self.name = orc_names.pop(random.choice(orc_names))
+        self.name = random.choice(orc_names)
         self.type = "orc"
         self.power = random.randint(10,15)
         self.speed = random.randint(0,5)
