@@ -8,8 +8,8 @@ class Goblin(Monster):
         super().__init__(hp, weapon_name,weapon_power,armor_rating)
         self.name = goblin_names.pop(random.choice(goblin_names))
         self.type = "goblin"
-        self.power = random.randint(5.10)
-        self.speed = random.randint(5.10)
+        self.power = random.randint(5,10)
+        self.speed = random.randint(5,10)
 
     def speak(self):
         print(f"{self.name} type: {self.type}: whblgraa")
